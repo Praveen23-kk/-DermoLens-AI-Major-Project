@@ -52,47 +52,10 @@
 ---
 
 ## 🏗 Project Architecture
-
+```
 ![Project Screenshot](Results/Project_Artich.png)
-
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                    DermoLens AI Pipeline                         │
-├──────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   ┌─────────────┐    ┌──────────────────┐    ┌──────────────┐   │
-│   │  HAM10000   │───▶│  Preprocessing   │───▶│   Training   │   │
-│   │  Dataset    │    │  & Augmentation   │    │   Pipeline   │   │
-│   └─────────────┘    └──────────────────┘    └──────┬───────┘   │
-│                                                      │           │
-│                          ┌───────────────────────────┼────┐      │
-│                          ▼               ▼           ▼    │      │
-│                    ┌──────────┐   ┌────────────┐  ┌─────┐│      │
-│                    │   SVM    │   │ EfficientNet│  │ RNN ││      │
-│                    │ Baseline │   │     B3      │  │LSTM ││      │
-│                    └────┬─────┘   └─────┬──────┘  └──┬──┘│      │
-│                         │               │            │    │      │
-│                         ▼               ▼            ▼    │      │
-│                    ┌─────────────────────────────────────┐│      │
-│                    │      Model Comparison & Plots       ││      │
-│                    └──────────────┬──────────────────────┘│      │
-│                                   │                       │      │
-│                    ┌──────────────▼──────────────────────┐│      │
-│                    │    Pickle Export (.pkl) for Deploy   ││      │
-│                    └──────────────┬──────────────────────┘│      │
-│                                   │                       │      │
-│                    ┌──────────────▼──────────────────────┐│      │
-│                    │   FastAPI Server (Port 8000)        ││      │
-│                    │   /predict  /health  /models        ││      │
-│                    └──────────────┬──────────────────────┘│      │
-│                                   │                       │      │
-│                    ┌──────────────▼──────────────────────┐│      │
-│                    │  Frontend (Next.js / Static HTML)   ││      │
-│                    │  Upload → Inference → Grad-CAM      ││      │
-│                    └────────────────────────────────────┘ │      │
-│                                                           │      │
-└──────────────────────────────────────────────────────────────────┘
-```
+    
 
 > 📌 **Detailed Architectural Specifications**: For interactive Mermaid system architecture diagrams, end-to-end operational flowcharts, and component sequence flow diagrams, see [docs/architecture_and_workflows.md](docs/architecture_and_workflows.md).
 
