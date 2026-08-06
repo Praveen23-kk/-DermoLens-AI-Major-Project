@@ -52,9 +52,8 @@
 ---
 
 ## 🏗 Project Architecture
-```
+
 ![Project Screenshot](Results/Project_Artich.png)
-```
     
 
 > 📌 **Detailed Architectural Specifications**: For interactive Mermaid system architecture diagrams, end-to-end operational flowcharts, and component sequence flow diagrams, see [docs/architecture_and_workflows.md](docs/architecture_and_workflows.md).
