@@ -53,8 +53,8 @@
 
 ## 🏗 Project Architecture
 
+![Project Screenshot](Results/Project_Artich.png)
 
-<img src="Results/Project_Artich.png" alt="Project Screenshot" width="400">
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                    DermoLens AI Pipeline                         │
